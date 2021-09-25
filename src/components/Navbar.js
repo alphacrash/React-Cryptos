@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button, Menu, Typography, Avatar } from "antd";
+import { Button, Menu, Typography } from "antd";
 import { Link } from "react-router-dom";
 import {
   HomeOutlined,
@@ -8,8 +8,6 @@ import {
   FundOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
-
-import icon from "../images/cryptocurrency.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
@@ -36,9 +34,8 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">Cryptoverse</Link>
+          <Link to="/">React Crypto</Link>
         </Typography.Title>
       </div>
       <Button
